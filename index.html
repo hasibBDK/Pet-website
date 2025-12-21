@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet World</title>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="w-11/12 mx-auto flex justify-between py-12">
+        <div class="flex gap-3 ">
+          <img class="w-8 h-8" src="/images/logo.webp" />
+          <h4 class="font-bold text-3xl">Peddy</h4>
+        </div>
+        <div class="flex absolute text-gray-600 items-center left-1/2 -translate-x-1/2 gap-4 ">
+          <a href="">Home</a>
+          <a href="">shop</a>
+          <a href="">Contact</a>
+        </div>
+        <div>
+          <img class=" rounded-full w-6 h-6"
+            src="https://img.icons8.com/?size=48&id=zxB19VPoVLjK&format=png"
+            alt=""
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="w-11/12 mx-auto flex flex-col">
+           <div class="flex flex-col justify-center items-center">
+               <div class="flex">
+                 <h4>Bringging Families Together</h4>
+                 <img class="w-8 h-8" src="https://img.icons8.com/?size=160&id=MeBzudgPlfgZ&format=png">
+               </div>
+               <div class="flex flex-col items-center justify-center py-6 w-6/12">
+                  <h1 class="font-bold text-4xl">
+                      Your Path to Adoption<br>
+                         <span class=" flex justify-center">Starts Here</span> 
+                  </h1>
+                  <p class="flex justify-center py-4 flex-col">
+                    This is a place where different kind of pets you get here.This is a page where you find your suitable
+                     <span class="flex justify-center">pet and can easily adopt. So choose your pet and adopt asap.</span>
+                  </p>
+                  <div>
+                    <button class="btn rounded-xl btn-accent">View More</button>
+                  </div>
+               </div>
+           </div>
+           <div class=" flex justify-center items-center py-10 w-11/12 mx-auto">
+              <img src="/images/pet.webp">
+
+           </div>
+        </section>
+        <section class="">
+          <h1 class="font-bold text-4xl flex justify-center"> Adop your best Friend</h1>
+          <p class="flex justify-center w-2/4 mx-auto flex-col py-4">
+            There are different kind of pet available like dog,cat,bird and rabbit ect.The are so healthy and ready to go
+            <span class="flex justify-center">with you.Just choose them and order them.Thanks for coming the page.</span> 
+          </p>
+
+          <div id="petcategorybutton" class="py-4 w-10/12 mx-auto flex justify-between items-center">
+
+          </div>
+        </section>
+        
+    </main> 
+    <script src="/js/pet.js"></script>
+    <div class="py-4 w-10/12 mx-auto flex justify-between">
+      <h3 class="font-bold">
+          Best Deal Dor yoy
+      </h3>
+      <button class="btn btn-accent">Sort by Price</button>
+    </div>
+  </body>
 </html>
