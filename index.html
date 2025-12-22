@@ -59,24 +59,116 @@
            </div>
         </section>
         <section class="">
-          <h1 class="font-bold text-4xl flex justify-center"> Adop your best Friend</h1>
+          <h1 class="font-bold text-4xl flex justify-center"> Adopt your best Friend</h1>
           <p class="flex justify-center w-2/4 mx-auto flex-col py-4">
-            There are different kind of pet available like dog,cat,bird and rabbit ect.The are so healthy and ready to go
+            There are different kind of pet available like dog,cat,bird and rabbit etc.The are so healthy and ready to go
             <span class="flex justify-center">with you.Just choose them and order them.Thanks for coming the page.</span> 
           </p>
 
           <div id="petcategorybutton" class="py-4 w-10/12 mx-auto flex justify-between items-center">
 
           </div>
-        </section>
-        
-    </main> 
-    <script src="/js/pet.js"></script>
-    <div class="py-4 w-10/12 mx-auto flex justify-between">
-      <h3 class="font-bold">
-          Best Deal Dor yoy
+          <div class="py-4 w-10/12 mx-auto flex justify-between">
+      <h3 class="font-bold justify-center ">
+          Best Deal for you
       </h3>
       <button class="btn btn-accent">Sort by Price</button>
     </div>
+        </section>
+
+
+        <section id="allPets" class="w-10/12 mx-auto flex gap-4 py-10">
+            <div id="allPetsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-9/12 border border-gray-300 rounded-xl">
+
+            </div>
+            <div id="likedPetcontainer" class="grid grid-cols-2 gap-2 auto-rows-max items-start p-2 ">
+              
+            </div>
+        </section>
+         
+    </main> 
+
+    <!-- Open the modal using ID.showModal() method -->
+<button id="showModaldata" class="btn hidden" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <div id="showdetailsdiv"></div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+ <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+    <div class="w-10/12 mx-auto  flex justify-between">
+      <div class="">
+          <div class="flex gap-2  items-center">
+          <img class="w-6 h-6" src="/images/logo.webp" />
+          <h4 class="font-bold text-2xl text-white-600">Peddy</h4>
+          </div>
+          <div class="py-4 text-sm text-white-600">
+            <p>Location:av,Washington 165,NY CA 54003</p>
+            <P>Phone: +318596450359 </P>
+            <p>info@gmail.com</p>
+            <p>Opening hours: 9:00 AM - 5:00 AM</p>
+          </div>
+          <div class="flex gap-2">
+            <img class="w-8 h-8" src="https://img.icons8.com/?size=96&id=118497&format=png">
+            <img class="w-8 h-8" src="https://img.icons8.com/?size=96&id=ZNMifeqJbPRv&format=png">
+            <img class="w-8 h-8" src="https://img.icons8.com/?size=96&id=19318&format=png">
+            <img class="w-8 h-8" src="https://img.icons8.com/?size=96&id=32323&format=png">
+            
+          </div>
+          
+      </div>
+      <div>
+        <h3 class="font-bold text-white-600">Useful Links</h3>
+        <div class="py-4 flex flex-col">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Animals</a>
+          <a href="">Foundation</a>
+          <a href="">Contact</a>
+        </div>
+
+      </div>
+      <div>
+        <h3 class="font-bold">Drop a message</h3>
+        <div class="flex flex-col py-4">
+          
+          <label class="input bg-gray-200 text-gray-700">
+  <svg class="h-[1em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="m21 21-4.3-4.3"></path>
+    </g>
+  </svg>
+  <input
+    type="text"
+    required
+    placeholder="Enter Your Email"
+    class="bg-transparent"
+  />
+</label>
+
+          <button class="btn btn-accent rounded-xl mt-2">Subscribe</button>
+        </div>
+
+      </div>
+
+    </div>
+</footer>
+    <script src="/js/pet.js"></script>
+    
   </body>
 </html>
