@@ -102,8 +102,8 @@ displayallPets=(pets)=>
         {
             petContainer.classList.remove("grid");
             petContainer.innerHTML=`
-                <div class="flex flex-col justify-center items-center border gap-5">
-                    <img class="w-50 h-50" src="/images/error.webp" />
+                <div class="flex flex-col justify-center items-center  gap-5 p-5">
+                    <img class="w-50 h-50" src="images/error.webp" />
                     <h1 class="font-bold text-3xl">No Information Available</h1>
                     <p>No pets available now.If any pet availabel will updated.Stay with us.</p>
                 </div>
